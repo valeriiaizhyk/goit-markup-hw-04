@@ -28,7 +28,9 @@
           >
           <ul class="header-list list">
             <li class="header-item">
-              <a class="header-link-studio link" href="./index.html">Studio</a>
+              <a class="header-link header-link-studio link" href="./index.html"
+                >Studio</a
+              >
             </li>
             <li class="header-item">
               <a class="header-link link" href="./portfolio.html">Portfolio</a>
@@ -451,7 +453,7 @@
       </section>
       <!--5 section-->
       <section class="customers">
-        <div class="container-customers">
+        <div class="container-customers container">
           <h2 class="customers-title">Customers</h2>
           <ul class="customers-list list">
             <li class="customers-item">
@@ -531,7 +533,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="container footer-container">
         <a class="footer-logo link" href="./index.html"
           >Web<span class="footer-logo-second">Studio</span></a
         >
@@ -541,7 +543,7 @@
         </p>
       </div>
       <div class="footer-social-media container">
-        <h3 class="footer-social-subtitle">Social media</h3>
+        <p class="footer-social-text">Social media</p>
         <ul class="footer-social-media-list list">
           <li class="footer-social-media-item">
             <a
@@ -593,18 +595,16 @@
           </li>
         </ul>
       </div>
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button type="button" class="modal-close-btn" data-modal-close>
-            <svg class="close-btn" width="8" height="8">
-              <use
-                href="./images/icons.svg.svg#icon-close-black-18dp-2-1"
-              ></use>
-            </svg>
-          </button>
-        </div>
-      </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="close-btn" width="8" height="8">
+            <use href="./images/icons.svg.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
