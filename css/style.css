@@ -538,6 +538,10 @@ img {
 .footer-container {
 }
 
+.first-box-footer {
+  margin-right: 128px;
+}
+
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -781,6 +785,7 @@ img {
 .modal-close-btn:focus {
   background-color: var(--color-ocean);
   border: none;
+  fill: var(--color-white);
 }
 
 .close-btn {
