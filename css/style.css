@@ -194,7 +194,7 @@ img {
 
 .header-link {
   display: flex;
-  color: var(--navyblue, #2e2f42);
+  color: var(--color-ocean);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5em;
@@ -316,6 +316,8 @@ img {
 .values-icon-item {
   width: 264px;
   height: 112px;
+  align-items: center;
+  justify-content: center;
   display: flex;
   padding: 24px 100px;
   flex-shrink: 0;
@@ -543,10 +545,16 @@ img {
 }
 
 .footer-container {
+  position: relative;
+}
+
+.footer-content {
+  display: flex;
+  align-content: baseline;
 }
 
 .first-box-footer {
-  margin-right: 128px;
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -574,9 +582,11 @@ img {
 }
 
 .footer-social-media {
+  flex-direction: column;
   display: flex;
+  margin-top: 20px;
   justify-content: center;
-  transform: translateY(-129px);
+  transform: translateY(-40px);
 }
 .footer-social-media-list {
   display: flex;
