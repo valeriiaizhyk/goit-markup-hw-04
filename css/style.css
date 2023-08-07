@@ -228,6 +228,7 @@ img {
 
 .hero {
   max-width: 1440px;
+  width: 100%;
   background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -400,6 +401,7 @@ img {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-sizing: border-box;
 }
 
 .team-img {
@@ -534,6 +536,14 @@ img {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.customers-icon:hover,
+.customers-icon:focus {
+  fill: var(--color-ocean);
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .footer {
   height: 312px;
   padding: 100px 0;
@@ -551,6 +561,7 @@ img {
 
 .first-box-footer {
   margin-right: 120px;
+  align-content: baseline;
 }
 
 .footer-logo {
@@ -605,8 +616,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-media-link:focus,
@@ -687,7 +697,7 @@ img {
   height: auto;
 }
 
-.portfolio-sec-item:hover .portfolio-cover {
+.portfolio-sec-item:hover .portfolio-cover-wrap {
   transform: translateY(0);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -711,11 +721,12 @@ img {
 }
 
 .portfolio-cover-text {
+  width: 100%;
   position: absolute;
   top: 0;
   background: var(--iris, #4d5ae5);
   height: 100%;
-  padding: 40px 32px 164px;
+  padding: 40px 32px;
   display: flex;
   align-items: center;
   transform: translateY(100%);
