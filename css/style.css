@@ -53,7 +53,6 @@ body {
 
 .link {
   text-decoration: none;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-btn {
   text-decoration: none;
@@ -546,9 +545,6 @@ img {
 
 .footer-container {
   position: relative;
-}
-
-.footer-content {
   display: flex;
   align-content: baseline;
 }
@@ -582,11 +578,6 @@ img {
 }
 
 .footer-social-media {
-  flex-direction: column;
-  display: flex;
-  margin-top: 20px;
-  justify-content: center;
-  transform: translateY(-40px);
 }
 .footer-social-media-list {
   display: flex;
@@ -714,6 +705,9 @@ img {
 .portfolio-sec-img {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-sec-link {
 }
 
 .portfolio-sec-link:hover,
