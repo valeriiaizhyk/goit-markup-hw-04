@@ -239,6 +239,8 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: block;
+  align-items: center;
   padding: 188px 0;
   margin: 0 auto;
 }
@@ -461,7 +463,7 @@ img {
 
 .team-social-media-link:focus,
 .team-social-media-link:hover {
-  background-color: var(--color-green);
+  background-color: var(--color-ocean);
 }
 
 .team-social-icon {
