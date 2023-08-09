@@ -442,6 +442,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-media-item {
@@ -460,8 +461,7 @@ img {
 
 .team-social-media-link:focus,
 .team-social-media-link:hover {
-  background-color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--color-green);
 }
 
 .team-social-icon {
@@ -531,8 +531,6 @@ img {
 .customers-icon:focus {
   fill: var(--color-ocean);
   background-color: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
@@ -612,7 +610,6 @@ img {
 .footer-social-media-link:focus,
 .footer-social-media-link:hover {
   background-color: var(--color-green);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
